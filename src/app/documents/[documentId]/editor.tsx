@@ -8,6 +8,9 @@ import Table from '@tiptap/extension-table'
 import TableCell from '@tiptap/extension-table-cell'
 import TableHeader from '@tiptap/extension-table-header'
 import TableRow from '@tiptap/extension-table-row'
+import Image from '@tiptap/extension-image'
+import Dropcursor from '@tiptap/extension-dropcursor'
+import ImageResize from 'tiptap-extension-resize-image'
 
 export const Editor = () => {
   const editor = useEditor({
@@ -23,6 +26,9 @@ export const Editor = () => {
       TableCell,
       TableHeader,
       TableRow,
+      Image,
+      Dropcursor,
+      ImageResize,
       TaskItem.configure({
       nested:true
     }), 
