@@ -91,7 +91,7 @@ body {
   ul,
   ol {
     padding: 0 1rem;
-    margin: 1.25rem 1rem 1.25rem 0.4rem;
+    margin: 1rem 1rem 1rem 0.4rem; /* Adjusted margins */
   }
 
   ul li {
@@ -143,8 +143,7 @@ body {
     }
   }
 
-
-  /* Heading styles */
+  /* Heading styles (Adjusted Margins) */
   h1, 
   h2, 
   h3, 
@@ -152,14 +151,8 @@ body {
   h5, 
   h6 {
     line-height: 1.1;
-    margin-top: 1rem;
     overflow-wrap: break-word;
-  }
-
-  h1, 
-  h2 {
-    margin-top: 1.5rem;
-    margin-bottom: 1rem;
+    margin-block: 0.75rem 0.5rem; /* Uniform spacing for top & bottom */
   }
 
   h1 { 
@@ -229,7 +222,7 @@ body {
   }
 
   .tableWrapper {
-    margin: 1.5rem 0;
+    margin: 1rem 0; /* Reduced top and bottom margin */
     overflow-x: auto;
   }
 
@@ -239,19 +232,14 @@ body {
   }
 
   /* Image specific styling */
-
   img {
     display: block;
     height: auto;
-    margin: 1.5rem 0;
+    margin: 1rem 0; /* Reduced margin */
     max-width: 100%;
 
     &.ProseMirror-selectednode {
       outline: 3px solid var(--primary);
     }
   }
-  
-
-
-
 }
